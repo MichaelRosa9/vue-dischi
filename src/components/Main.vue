@@ -5,6 +5,8 @@
         v-for="(card, index) in cards" :key="index" 
         :card="card"
       />
+      <div  v-for="(card, index) in cards" :key="index">
+      </div>
     </div>
   </main>
 </template>
@@ -25,7 +27,7 @@ export default {
   created() {
     axios.get("https://flynn.boolean.careers/exercises/api/array/music")
     .then(result => {      
-      this.cards = result.data;
+      this.cards = result.data.response;
       console.log(this.cards);
     })
     .catch(err => {

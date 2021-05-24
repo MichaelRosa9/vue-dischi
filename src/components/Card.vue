@@ -20,10 +20,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/styles/vars.scss';
   .card {
     height: 360px;
     width:200px;
-    background-color: red;
-    border: 1px solid white;
+    background-color: $color;
+  }
+  img {
+    width: 100px;
   }
 </style>
