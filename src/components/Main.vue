@@ -21,5 +21,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/styles/vars.scss';
 
+main {
+  background-color: #1A2833;
+  height: calc(100vh - $header-height);
+  overflow: auto;
+}
 </style>

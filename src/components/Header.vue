@@ -17,7 +17,7 @@ export default {
 @import '../assets/styles/vars.scss';
 
 header {
-  height: 70px;
+  height: $header-heigth;
   background-color: $color;
   display: flex;
   align-items: center;
