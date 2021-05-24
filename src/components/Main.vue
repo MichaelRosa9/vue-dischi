@@ -1,18 +1,36 @@
 <template>
   <main>
-    <div class="container">
-      <Card />
-
+    <div class="container flex-center-between wrap">
+      <Card 
+        v-for="(card, index) in cards" :key="index" 
+        :card="card"
+      />
     </div>
   </main>
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
+
+import Card from '@/components/Card.vue';
+import axios from 'axios';
+
 export default {
   name: 'Main',
-  props: {
-
+  data(){
+    return {
+      axios,
+      cards: []
+    }
+  },
+  created() {
+    axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+    .then(result => {      
+      this.cards = result.data;
+      console.log(this.cards);
+    })
+    .catch(err => {
+      console.log(err);
+    });
   },
   components: {
     Card
@@ -25,7 +43,8 @@ export default {
 
 main {
   background-color: #1A2833;
-  height: calc(100vh - #{$header-heigth});
-
+  height: calc(100vh - #{$header-height});
 }
+
+
 </style>

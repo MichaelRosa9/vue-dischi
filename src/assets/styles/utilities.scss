@@ -1,0 +1,13 @@
+.container {
+  width: 1600px;  
+}
+
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
