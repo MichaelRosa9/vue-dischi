@@ -1,12 +1,10 @@
 <template>
   <main>
-    <div class="container flex-center-between wrap">
-      <Card 
+    <div class="container flex-center-between wrap padding-top-100 padding-bottom-100">
+      <Card class="basis-20-perc"
         v-for="(card, index) in cards" :key="index" 
         :card="card"
-      />
-      <div  v-for="(card, index) in cards" :key="index">
-      </div>
+      />      
     </div>
   </main>
 </template>
@@ -46,7 +44,10 @@ export default {
 main {
   background-color: #1A2833;
   height: calc(100vh - #{$header-height});
+  overflow: auto;
 }
+
+
 
 
 </style>

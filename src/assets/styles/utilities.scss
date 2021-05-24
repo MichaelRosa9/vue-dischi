@@ -1,13 +1,27 @@
 .container {
-  width: 1600px;  
+  width: 1600px;
+  margin: 0 auto; 
 }
 
 .flex-center-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+}
+
+.basis-20-perc {
+  flex-basis: 18%;
+  margin-top: 20px;
 }
 
 .wrap {
   flex-wrap: wrap;
+}
+
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+.padding-bottom-100 {
+  padding-bottom: 100px;
 }
