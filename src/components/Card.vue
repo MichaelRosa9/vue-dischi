@@ -33,7 +33,7 @@ export default {
   h4 {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: white
   }
 
@@ -42,6 +42,6 @@ export default {
     color: grey
   }
   img {
-    width: 100%;
+    width: 160px;
   }
 </style>

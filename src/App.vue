@@ -10,6 +10,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 
+
 export default {
   name: 'App',  
   components: {
@@ -20,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@fontsource/montserrat/index.css";
 @import './assets/styles/general.scss';
 @import './assets/styles/utilities.scss';
 

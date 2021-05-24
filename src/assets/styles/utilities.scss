@@ -1,27 +1,29 @@
 .container {
-  width: 1600px;
+  width: 80%;
   margin: 0 auto; 
 }
 
 .flex-center-between {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .basis-20-perc {
-  flex-basis: 18%;
-  margin-top: 20px;
+  flex-basis: 17%;
+
 }
 
 .wrap {
   flex-wrap: wrap;
 }
-
-
-.padding-top-100 {
-  padding-top: 100px;
+.gap-40 {
+  gap: 30px;
 }
-.padding-bottom-100 {
-  padding-bottom: 100px;
+
+.padding-top-25 {
+  padding-top: 25px;
+}
+.padding-bottom-50 {
+  padding-bottom: 50px;
 }

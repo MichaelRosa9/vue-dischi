@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="container flex-center-between wrap padding-top-100 padding-bottom-100">
+    <div class="container flex-center-between wrap gap-40">
       <Card class="basis-20-perc"
         v-for="(card, index) in cards" :key="index" 
         :card="card"
