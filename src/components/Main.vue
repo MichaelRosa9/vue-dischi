@@ -25,7 +25,7 @@ export default {
 
 main {
   background-color: #1A2833;
-  height: calc(100vh - $header-height);
-  overflow: auto;
+  height: calc(100vh - #{$header-heigth});
+
 }
 </style>
