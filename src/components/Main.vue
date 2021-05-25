@@ -7,7 +7,7 @@
       />      
     </div>
 
-    <Loader />
+    <Loader v-else />
   </main>
 </template>
 
