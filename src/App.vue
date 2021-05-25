@@ -53,10 +53,10 @@ export default {
   computed: {
     filtedCards(){
       return this.cards.filter(card => {
-       if(card.title.includes(this.text)){
-        return card.title.includes(this.text);
-       }else if(card.author.includes(this.text)){
-         return card.author.includes(this.text);
+       if(card.title.toLowerCase().includes(this.text.toLowerCase())){
+        return card.title.toLowerCase().includes(this.text.toLowerCase());
+       }else if(card.author.toLowerCase().includes(this.text.toLowerCase())){
+         return card.author.toLowerCase().includes(this.text.toLowerCase());
        }
       })
     }
